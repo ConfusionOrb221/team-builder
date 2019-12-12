@@ -8,7 +8,8 @@ const Form = (props) => {
     console.log(`${name} ${email} ${role}`);
 
     function handleClick(){
-        props.setMemberList([...props.memberList, {
+        props.setMemberList([...props.memberList, 
+            {
             name: name.current.value,
             email: email.current.value,
             role: role.current.value 
